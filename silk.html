@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Печатник | Полиграфические услуги</title>
+    <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+
+<div id="toTop"> </div>
+<div class="fix-box" id="fix-box"></div>
+<div class="overlay" id="overlay"></div>
+
+<div class="popup" id="popupPhone">
+    <a href="#fix-box" class="popup_area"></a>
+    <div class="popup_body">
+        <div class="popup_content">
+            <a href="#fix-box" class="popup_close">
+                &times;
+            </a>
+            <div class="popup_title">Оставить заявку</div>
+            <p class="popup__text">Чтобы оставить заявку, пожалуйста, заполните свои контактные данные</p>
+            <div class="popup_text">
+                <form class="phone-form" action="" method="post" id="phoneForm" name="phoneForm">
+                    <input class="name-input" type="text" placeholder="Имя" required name="name">
+                    <input class="phone-input" type="tel" placeholder="Телефон" required name="phone">
+                    <div class="order-form__check">
+                        <input type="checkbox" class="checkbox" name="check" style="cursor: pointer; opacity: .8; background-color: black;" id="checkBox2">
+                        <p class="order-form__check__txt">Нажимая кнопку вы даете согласие <a href="#">на обработку ваших персональных данных</a></p>
+                    </div>
+                    <a href="#orderSuccess" type="submit" class="phone-submit" id="phoneSubmit">Отправить</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="popup" id="orderSuccess">
+    <a href="#fix-box" class="popup_area"></a>
+    <div class="popup_body">
+        <div class="popup_content">
+            <a href="#fix-box" class="popup_close">
+                &times;
+            </a>
+            <div class="orderSuccess__content">
+                <div class="orderSuccess__title">Заявка успешно отправлена!</div>
+                <div class="orderSuccess__text">
+                    Наши специалисты свяжутся с Вами. Спасибо, что выбрали нас!
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<header class="header">
+    <div class="header__logo">
+        <div class="logo__icon">
+            <img src="images/logo-min.jpg" alt="логотип компании">
+        </div>
+        <div class="logo__title">
+            Полиграфические услуги
+        </div>
+    </div>
+    <div class="header__phone">
+        <div class="phone__number">+7 (351-59) 2-12-20<br>bestprint@mail.ru</div>
+    </div>
+    <nav class="header__nav">
+        <a href="index.html" class="nav__item">Главная</a>
+        <a href="index.html#about" class="nav__item">О&nbsp;нас</a>
+        <a href="index.html#services" class="nav__item">Услуги</a>
+        <a href="index.html#gallery" class="nav__item">Галерея</a>
+        <a href="index.html#reviews" class="nav__item">Отзывы</a>
+        <a href="#news" class="nav__item">Новости</a>
+        <div class="nav__item-more">Еще
+            <div class="item-more__panel">
+                <a href="index.html#about" class="more__item more__item_hide">О&nbsp;нас</a>
+                <a href="index.html#services" class="more__item more__item_hide">Услуги</a>
+                <a href="index.html#gallery" class="more__item more__item_hide">Галерея</a>
+                <a href="index.html#reviews" class="more__item more__item_hide">Отзывы</a>
+                <a href="#news" class="more__item more__item_hide">Новости</a>
+                <a href="#blog" class="more__item">Статьи</a>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<div class="mobile__nav">
+    <div class="burger" id="burger">
+        <div class="burger__line1" ></div>
+        <div class="burger__line2"></div>
+        <div class="burger__line3"></div>
+    </div>
+</div>
+
+<div class="mobile__nav__panel" id="mobileNavPanel">
+    <a href="index.html" class="mobile__nav__item">Главная</a>
+    <a href="index.html#about" class="mobile__nav__item">О&nbsp;нас</a>
+    <a href="index.html#services" class="mobile__nav__item">Услуги</a>
+    <a href="index.html#gallery" class="mobile__nav__item">Галлерея</a>
+    <a href="index.html#reviews" class="mobile__nav__item">Отзывы</a>
+    <a href="#news" class="mobile__nav__item">Новости</a>
+    <a href="#blog" class="mobile__nav__item">Статьи</a>
+    <span class="panel__close" id="panelClose">&times;</span>
+</div>
+
+<div class="breadcrumbs">
+    <a href="index.html">Главная</a> / Шелкография
+</div>
+
+<main class="main">
+    <section class="page">
+        <div class="page__content">
+            <div class="page__content__title">
+                <h2>Что такое <span>шелкография</span></h2>
+                <img src="images/3.svg" alt="">
+            </div>
+            <p class="page__content__text">Шелкография — это один из современных методов трафаретной печати, второе его название — трафаретная печать. Изделия, на которые наносится изображение, могут быть любыми — от стандартной бумаги до кружек или мелких канцелярских принадлежностей. Одно из главных, неоспоримых преимуществ метода — низкая себестоимость</p>
+            <p class="page__content__text">Свое название шелкография взяла от англоязычного названия патента начала прошлого века на процесс трафаретной печати «Silk Screen Printing» – дословно можно перевести как «печать шелковым ситом» – печать шелкографией. Считается, что этот способ печати возник далеко в древности, но современный вид и повсеместную востребованность технология шелкографии приобрела уже в середине XX века</p>
+            <p class="page__content__text">Шелкография – это, по сути, усовершенствованный трафаретный способ печати, вместо термина «шелкография» в полиграфии используется более точное понятие – трафаретная печать</p>
+
+        </div>
+        <div class="page__content__image">
+            <img src="images/silk01-min.jpg" alt="">
+        </div>
+    </section>
+
+    <section class="page">
+        <div class="page__content__image">
+            <img src="images/silk04-min.jpg" alt="">
+        </div>
+        <div class="page__content">
+            <div class="page__content__title">
+                <h2>Трафаретный способ <span>печати</span></h2>
+                <img src="images/3.svg" alt="">
+            </div>
+            <p class="page__content__text">Трафаретный способ печати имеет более высокие художественные возможности в отличие от других видов печати. Кроме того, спектр материалов для печати шелкографией практически безграничен: бумага, картон, ткани, металлы, стекло, дерево, синтетическая пленка, – печать на любой поверхности. Шелкография применима не только на плоских поверхностях, но и на объемных, и даже рельефных. Толщина красочного слоя может колебаться в пределах от 10 до 100 мкм, что обеспечивает высокое качество изображения. Только в трафаретной печати возможно применение флуоресцентных и перламутровых красок для достижения различных спецэффектов</p>
+            <p class="page__content__text">Печать с помощью трафаретных форм можно осуществлять практически на любых видах оборудования для шелкографии, начиная с самых примитивных приспособлений и заканчивая полностью автоматизированными машинами, способными создавать до нескольких сотен тысяч экземпляров. Трафаретную печать можно осуществлять даже в домашних условиях</p>
+        </div>
+    </section>
+
+</main>
+
+    <div class="advantages">
+        <div class="advantage">
+            <div class="advantage__image">
+                <img src="images/silk02-min.jpg" alt="">
+            </div>
+            <div class="advantage__title">Качество</div>
+            <div class="advantage__text">Шелкография обеспечивает высокое качество печати, что приводит к яркой и четкой картинке с высоким разрешением. Это особенно важно, когда речь идет о изображении логотипов или других элементов брендинга, которые должны быть четкими и яркими, чтобы привлекать внимание потенциальных клиентов</div>
+        </div>
+        <div class="advantage">
+            <div class="advantage__image">
+                <img src="images/silk03-min.jpg" alt="">
+            </div>
+            <div class="advantage__title">Материалы</div>
+            <div class="advantage__text">Метод шелкографии позволяет печатать на широком диапазоне материалов, включая бумагу, пластик, металл, стекло, керамику и ткань. Это делает его универсальным методом производства полиграфической продукции, который может использоваться для создания различных типов продуктов</div>
+        </div>
+        <div class="advantage">
+            <div class="advantage__image">
+                <img src="images/silk05-min.jpg" alt="">
+            </div>
+            <div class="advantage__title">Экономия</div>
+            <div class="advantage__text">Шелкография является относительно дешевым и экономически выгодным способом производства полиграфической продукции. Стоимость печати уменьшается с увеличением количества заказываемых изделий. Это означает, что заказчики могут получить качественный продукт по разумной цене</div>
+        </div>
+        <div class="advantage">
+            <div class="advantage__image">
+                <img src="images/silk06-min.jpg" alt="">
+            </div>
+            <div class="advantage__title">Долговечность</div>
+            <div class="advantage__text">Печать, выполненная методом шелкографии, обладает высокой стойкостью к внешним воздействиям, таким как ультрафиолетовое излучение, влага и износ. Это обеспечивает долговечность продукта и сохранение качества печати в течение длительного времени</div>
+        </div>
+    </div>
+
+<section class="steps">
+    <div class="step__silk">
+        <div class="step__number">01</div>
+        <div class="step__title">подготовка дизайна</div>
+        <p class="step__text">Для начала процесса необходимо подготовить дизайн, который будет печататься. Дизайн создается в программе для графического дизайна</p>
+    </div>
+    <div class="step__silk">
+        <div class="step__number step__silk__number-up">02</div>
+        <div class="step__title">подготовка трафарета</div>
+        <p class="step__text">Трафарет создается путем нанесения фотополимерной эмульсии на поверхность сетки и экспонирования его на свету с использованием специальных фотошаблонов</p>
+        <div class="step__number step__silk__number-down">02</div>
+    </div>
+    <div class="step__silk">
+        <div class="step__number">03</div>
+        <div class="step__title">печать на изделие</div>
+        <p class="step__text">Печать происходит путем приложения рамы с сеткой к поверхности материала и применения давления, чтобы краска переносилась на материал</p>
+    </div>
+    <div class="step__silk">
+        <div class="step__number step__silk__number-up">04</div>
+        <div class="step__title">сушка и доводка</div>
+        <p class="step__text"> Сушка может происходить как естественным путем (на воздухе), так и с помощью сушилки. Материал можно дополнительно обработать при необходимости</p>
+        <div class="step__number step__silk__number-down">04</div>
+    </div>
+</section>
+
+<div class="priorities__bg" id="reviews">
+    <img src="images/2.webp" class="priority__img1" alt="">
+    <img src="images/2.webp" class="priority__img2" alt="">
+    <section class="priorities">
+        <div class="priorities__left">
+            <div class="priorities__left__header">
+                <div class="priorities__left__header__image">
+                    <img src="images/3.svg" alt="">
+                </div>
+                <div class="priorities__left__uptitle">когда необходимо выбирать</div>
+                <h2 class="priorities__left__title">шелкографию</h2>
+            </div>
+            <p>Существуют определенные ситуации, когда выбор шелкографии может быть более предпочтителен, чем другие методы печати</p>
+            <div class="priorities__left__image">
+                <img src="images/silk07-min.jpg" alt="">
+            </div>
+        </div>
+        <div class="priorities__right">
+            <div class="priority">
+                <div class="priority__icon">
+                    <img src="images/check-min.png" alt="">
+                </div>
+                <p class="priority__name">Печать на тканях</p>
+                <p class="priority__text">Шелкография является особенно эффективным методом для печати на текстильных изделиях, таких как футболки, куртки, сумки и т.д. Она позволяет создавать яркие и стойкие изображения на тканях, которые могут выдерживать многократные стирки</p>
+            </div>
+            <div class="priority">
+                <div class="priority__icon">
+                    <img src="images/check-min.png" alt="">
+                </div>
+                <p class="priority__name">Большие изображения</p>
+                <p class="priority__text">Шелкография позволяет создавать крупномасштабные изображения с высокой степенью детализации. Это особенно полезно при печати на баннерах, вывесках, плакатах и других крупных поверхностях</p>
+            </div>
+            <div class="priority">
+                <div class="priority__icon">
+                    <img src="images/check-min.png" alt="">
+                </div>
+                <p class="priority__name">Уникальные эффекты</p>
+                <p class="priority__text">Шелкография может использоваться для создания различных текстур и эффектов, таких как градиенты, мерцания, переходы и т.д. Это особенно полезно для создания уникальных дизайнов на упаковке, рекламных материалах и других изделиях</p>
+            </div>
+            <div class="priority">
+                <div class="priority__icon">
+                    <img src="images/check-min.png" alt="">
+                </div>
+                <p class="priority__name">Твердые поверхности</p>
+                <p class="priority__text">Шелкография может использоваться для печати на различных твердых материалах, таких как стекло, металл, пластик и др. Она может создавать яркие, долговечные изображения, которые могут выдерживать эксплуатацию в условиях высокой влажности, температуры и механических нагрузок</p>
+            </div>
+
+        </div>
+    </section>
+</div>
+
+<footer class="footer">
+    <div class="footer__left">
+        <h3 class="footer__left__title">
+            Хотите <span>бесплатно</span> проконсултироваться?
+        </h3>
+        <p class="footer__left__text">Наш салон оперативной полиграфии предлагает услуги трафаретной печати и другие полиграфические услуги по невысоким ценам при возможности печати любого, в том числе единичного, тиража, штучных полиграфических изделий, опытных и выставочных экземпляров продукции</p>
+        <div class="footer__left__links">
+            <a href="#popupPhone" class="footer__left_btn">online-заявка</a>
+            <span class="footer__left_phone">+7 (351-59) 2-12-20<br>bestprint@mail.ru</span>
+            <img src="images/3.svg" alt="">
+        </div>
+    </div>
+    <div class="footer__right">
+        <div class="footer__right__nav">
+            <h3 class="footer__nav_title">Навигация по сайту</h3>
+            <a href="" class="footer__nav_item">О нас</a>
+            <a href="" class="footer__nav_item">Услуги</a>
+            <a href="" class="footer__nav_item">Контакты</a>
+            <a href="" class="footer__nav_item">Галерея</a>
+            <a href="" class="footer__nav_item">Новости</a>
+            <a href="" class="footer__nav_item">О нас</a>
+            <a href="" class="footer__nav_item">Услуги</a>
+            <a href="" class="footer__nav_item">Контакты</a>
+            <a href="" class="footer__nav_item">Галерея</a>
+            <a href="" class="footer__nav_item">Новости</a>
+        </div>
+        <div class="footer__right_image">
+            <img src="images/2.webp" alt="">
+        </div>
+        <div class="footer__right_link">
+            <a href="#toTop">Вернуться наверх<img src="images/top.svg" alt=""></a>
+        </div>
+    </div>
+</footer>
+
+<div class="copy">
+    <a href="https:\\wd-asha.ru">&copy;wd-asha</a>
+</div>
+
+<script>
+    let mobileNavPanel = document.querySelector('#mobileNavPanel');
+    let panelClose = document.querySelector('#panelClose');
+    let overlay = document.querySelector('#overlay');
+    let burger = document.querySelector('#burger');
+
+    burger.addEventListener('click', function () {
+        mobileNavPanel.classList.remove('mobile__nav__panel-hide');
+        mobileNavPanel.classList.add('mobile__nav__panel-show');
+        overlay.classList.remove('overlay-hide');
+        overlay.classList.add('overlay-show');
+    });
+
+    panelClose.addEventListener('click', function () {
+        mobileNavPanel.classList.remove('mobile__nav__panel-show');
+        mobileNavPanel.classList.add('mobile__nav__panel-hide');
+        overlay.classList.remove('overlay-show');
+        overlay.classList.add('overlay-hide');
+    });
+</script>
+</body>
+</html>

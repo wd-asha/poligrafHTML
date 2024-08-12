@@ -1,0 +1,130 @@
+:root {
+    --colorText: rgba(94, 94, 94, 1);
+    --colorTitle: rgba(0, 0, 0, 1);
+    --colorSubtitle: rgba(21, 21, 21, 1);
+    --colorBtn: rgba(255, 138, 80, 1);
+    --colorLink: rgba(255, 255, 255, 1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Unbounded-Regular', sans-serif;
+    font-size: 13px;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #EDEDED;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.breadcrumbs {
+    max-width: calc(1600px + 2rem);
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Unbounded-Regular', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: var(--colorText);
+    padding: 2rem 0 5rem 0;
+}
+
+@media (max-width: 1600px) {
+    .breadcrumbs {
+        padding: calc(1rem + (2 - 1) * ((100vw - 20rem) / (123 - 20))) 0
+        calc(2rem + (5 - 2) * ((100vw - 20rem) / (123 - 20))) 0;
+        font-size: calc(.9rem + (1 - .9) * ((100vw - 20rem) / (123 - 20)));
+        line-height: calc(1rem + (1.5 - 1) * ((100vw - 20rem) / (123 - 20)));
+    }
+}
+
+.breadcrumbs a {
+    color: var(--colorBtn);
+}
+
+@media (max-width: 1600px) {
+    .breadcrumbs a {
+        font-size: calc(.9rem + (1 - .9) * ((100vw - 20rem) / (123 - 20)));
+        line-height: calc(1rem + (1.5 - 1) * ((100vw - 20rem) / (123 - 20)));
+    }
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 100;
+    opacity: 0;
+    visibility: hidden;
+    transition: 1s;
+}
+
+.overlay-show {
+    visibility: visible;
+    animation: overlayShow 1s both;
+}
+
+.overlay-hide {
+    animation: overlayHide 1s both;
+}
+
+.copy {
+    width: 100%;
+    padding: 1rem;
+    background-color: black;
+    text-align: center;
+}
+
+@media (max-width: 1600px) {
+    .copy {
+        padding: calc(.33rem + (1 - .33) * ((100vw - 20rem) / (123 - 20)));
+    }
+}
+
+.copy a {
+    font-family: 'Unbounded-Regular', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: white;
+    text-decoration: none;
+    opacity: .7;
+    transition: .5s;
+}
+
+@media (max-width: 1600px) {
+    .copy a {
+        font-size: calc(.8rem + (1 - .8) * ((100vw - 20rem) / (123 - 20)));
+    }
+}
+
+.copy a:hover {
+    opacity: 1;
+}
+
+@keyframes overlayShow {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: .66;
+    }
+}
+
+@keyframes overlayHide {
+    from {
+        opacity: .66;
+    }
+    to {
+        opacity: 0;
+    }
+}

@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Печатник | Полиграфические услуги</title>
+    <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+
+<div id="toTop"> </div>
+<div class="fix-box" id="fix-box"></div>
+<div class="overlay" id="overlay"></div>
+
+<div class="popup" id="popupPhone">
+    <a href="#fix-box" class="popup_area"></a>
+    <div class="popup_body">
+        <div class="popup_content">
+            <a href="#fix-box" class="popup_close">
+                &times;
+            </a>
+            <div class="popup_title">Оставить заявку</div>
+            <p class="popup__text">Чтобы оставить заявку, пожалуйста, заполните свои контактные данные</p>
+            <div class="popup_text">
+                <form class="phone-form" action="" method="post" id="phoneForm" name="phoneForm">
+                    <input class="name-input" type="text" placeholder="Имя" required name="name">
+                    <input class="phone-input" type="tel" placeholder="Телефон" required name="phone">
+                    <div class="order-form__check">
+                        <input type="checkbox" class="checkbox" name="check" style="cursor: pointer; opacity: .8; background-color: black;" id="checkBox2">
+                        <p class="order-form__check__txt">Нажимая кнопку вы даете согласие <a href="#">на обработку ваших персональных данных</a></p>
+                    </div>
+                    <a href="#orderSuccess" type="submit" class="phone-submit" id="phoneSubmit">Отправить</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="popup" id="orderSuccess">
+    <a href="#fix-box" class="popup_area"></a>
+    <div class="popup_body">
+        <div class="popup_content">
+            <a href="#fix-box" class="popup_close">
+                &times;
+            </a>
+            <div class="orderSuccess__content">
+                <div class="orderSuccess__title">Заявка успешно отправлена!</div>
+                <div class="orderSuccess__text">
+                    Наши специалисты свяжутся с Вами. Спасибо, что выбрали нас!
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<header class="header" id="header">
+    <div class="header__logo">
+        <div class="logo__icon">
+            <img src="images/logo-min.jpg" alt="логотип компании">
+        </div>
+        <div class="logo__title">Полиграфические услуги</div>
+    </div>
+    <div class="header__phone">
+        <div class="phone__number">+7 (351-59) 2-12-20<br>bestprint@mail.ru</div>
+    </div>
+    <nav class="header__nav">
+        <a href="index.html" class="nav__item nav__item-active">Главная</a>
+        <a href="#about" class="nav__item">О&nbsp;нас</a>
+        <a href="#services" class="nav__item">Услуги</a>
+        <a href="#gallery" class="nav__item">Галерея</a>
+        <a href="#reviews" class="nav__item">Отзывы</a>
+        <a href="#news" class="nav__item">Новости</a>
+        <div class="nav__item-more">Еще
+            <div class="item-more__panel">
+                <a href="#about" class="more__item more__item_hide">О&nbsp;нас</a>
+                <a href="#services" class="more__item more__item_hide">Услуги</a>
+                <a href="#gallery" class="more__item more__item_hide">Галерея</a>
+                <a href="#reviews" class="more__item more__item_hide">Отзывы</a>
+                <a href="#news" class="more__item more__item_hide">Новости</a>
+                <a href="#blog" class="more__item">Статьи</a>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<div class="mobile__nav">
+    <div class="burger" id="burger">
+        <div class="burger__line1" ></div>
+        <div class="burger__line2"></div>
+        <div class="burger__line3"></div>
+    </div>
+</div>
+
+<div class="mobile__nav__panel" id="mobileNavPanel">
+    <a href="#about" class="mobile__nav__item">О&nbsp;нас</a>
+    <a href="#services" class="mobile__nav__item">Услуги</a>
+    <a href="#gallery" class="mobile__nav__item">Галлерея</a>
+    <a href="#reviews" class="mobile__nav__item">Отзывы</a>
+    <a href="#news" class="mobile__nav__item">Новости</a>
+    <a href="#blog" class="mobile__nav__item">Статьи</a>
+    <span class="panel__close" id="panelClose">&times;</span>
+</div>
+
+<section class="slider">
+    <div class="slider__content">
+        <div class="slider__content_address">
+            <span>Челябинск, ул.Мира, 103</span>
+            <img src="images/3.svg" alt="">
+        </div>
+        <p class="slider__content_slogan">Безупречное качество. Комфортные цены.</p>
+        <h1>Полиграфия <span><img src="images/11.gif" alt=""></span></h1>
+
+        <img src="images/3.svg" class="image__star" alt="">
+        <div class="slider__content_list">
+            <div class="slider__content_item">
+                визитки <span>01</span>
+            </div>
+            <div class="slider__content_item">
+                флаеры <span>02</span>
+            </div>
+            <div class="slider__content_item">
+                листовки <span>03</span>
+            </div>
+            <div class="slider__content_item">
+                буклеты <span>04</span>
+            </div>
+            <div class="slider__content_item">
+                плакаты <span>05</span>
+            </div>
+            <div class="slider__content_item">
+                календари <span>06</span>
+            </div>
+        </div>
+        <div class="slider__content_link">
+            <a href="#popupPhone" class="slider__content_btn">online-заявка</a>
+            <span>ваши идеи — наше воплощение!</span>
+        </div>
+    </div>
+    <div class="slider__image">
+        <img src="images/1.webp" alt="">
+    </div>
+</section>
+
+<section class="services" id="services">
+    <div class="service">
+        <div class="service__image">
+            <img src="images/silk-min.jpeg" alt="service">
+        </div>
+        <div class="service__content">
+            <div class="service__content_text">
+                <div class="service__content_title">Шелкография</div>
+                <div class="service__content_desc">Разновидность трафаретной печати, в которой в качестве печатной формы используются специальные полиэфирные, нейлоновые или металлические сетки малой толщины. Изделия, на которые наносится изображение, могут быть любыми — от стандартной бумаги до кружек или канцелярских принадлежностей</div>
+            </div>
+            <div class="service__content_link">Читать подробнее
+                <a href="silk.html" class="link-round">
+                    <img src="images/right.svg" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="service">
+        <div class="service__image">
+            <img src="images/baners-min.jpg" alt="service">
+        </div>
+        <div class="service__content">
+            <div class="service__content_text">
+                <div class="service__content_title">Банеры</div>
+                <div class="service__content_desc">Самый доступный и действенный вид наружной рекламы. Баннеры отличаются оперативностью изготовления, простотой монтажа и неприхотливостью ухода. устойчивы к неблагоприятным воздействиям погоды, ненавязчивы и привлекательны</div>
+            </div>
+            <div class="service__content_link">Читать подробнее
+                <a href="silk.html">
+                    <img src="images/right.svg" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="service">
+        <div class="service__image">
+            <img src="images/vizit-min.jpg" alt="service">
+        </div>
+        <div class="service__content">
+            <div class="service__content_text">
+                <div class="service__content_title">Визитки</div>
+                <div class="service__content_desc">Шелкотрафаретная печать позволяет получать яркие, насыщенные цвета на бумаге любого типа, в т.ч. на темных бумагах и пластиках — это особенность метода изготовления визиток. Особенность шелкографии при печати визиток — возможность добиваться впечатляющих эффектов на фактурных и ярких материалах</div>
+            </div>
+            <div class="service__content_link">Читать подробнее
+                <a href="silk.html">
+                    <img src="images/right.svg" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="service">
+        <div class="service__image">
+            <img src="images/cup-min.jpg" alt="service">
+        </div>
+        <div class="service__content">
+            <div class="service__content_text">
+                <div class="service__content_title">Сувениры</div>
+                <div class="service__content_desc">Шелкографическая печать на ткани, на бумаге, на металле и стекле позволяет создавать уникальные дизайнерские решения рекламной продукции, интересные сувениры, стильные вещи. В рекламной деятельности шелкография используется для брендирования и персонализации сувенирной продукции</div>
+            </div>
+            <div class="service__content_link">Читать подробнее
+                <a href="silk.html">
+                    <img src="images/right.svg" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="about" id="about">
+    <div class="about__content">
+        <div class="about__content__header">
+            <div class="about__content__uptitle">освещаем ваши идеи</div>
+            <h2 class="about__content__title">о нас <span><img src="images/11.gif" alt=""></span></h2>
+            <div class="about__content__header__image">
+                <img src="images/3.svg" alt="">
+            </div>
+        </div>
+        <p>Приветствуем Вас на сайте нашего салона оперативной полиграфии. Мы занимаемся печатью и изготовлением различной полиграфической продукции, в частности брошюр, буклетов, визиток, пакетов, наклеек, календарей, листовок и многого другого.</p>
+        <p>Среди наших клиентов можно встретить крупные рестораны, сети магазинов, кафе, сервисные центры и иные компании. Многие из них на постоянной основе сотрудничают с нами, заказывая брошюры, листовки, буклеты и иную рекламную и фирменную продукцию.</p>
+    </div>
+    <div class="about__image">
+        <img src="images/2-min.png" alt="">
+        <div class="about__image_25">
+            <p>25 лет</p>
+            <p>безупречной репутации</p>
+        </div>
+    </div>
+</section>
+
+<section class="works" id="gallery">
+    <h2 class="works__title">наши работы <span><img src="images/11.gif" alt=""></span></h2>
+<div class="swiperBox">
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="images/work1-min.png" alt="service">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/work2-min.png" alt="service">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/work3-min.png" alt="service">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/work4-min.jpg" alt="service">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/work5-min.jpg" alt="service">
+            </div>
+
+        </div>
+    </div>
+</div>
+</section>
+
+<section class="steps">
+    <div class="step">
+        <div class="step__number">01</div>
+        <div class="step__title">звонок или заявка</div>
+        <p class="step__text">Примерное описание. Текст редактируется через систему управления сайтом.</p>
+    </div>
+    <div class="step">
+        <div class="step__number step__number-up">02</div>
+        <div class="step__title">соглосование заказа</div>
+        <p class="step__text">Примерное описание. Текст редактируется через систему управления сайтом.</p>
+        <div class="step__number step__number-down">02</div>
+    </div>
+    <div class="step">
+        <div class="step__number">03</div>
+        <div class="step__title">изготовление и оплата</div>
+        <p class="step__text">Примерное описание. Текст редактируется через систему управления сайтом.</p>
+    </div>
+</section>
+
+<div class="reviews__bg" id="reviews">
+    <img src="images/2.webp" class="review__img1" alt="">
+    <img src="images/2.webp" class="review__img2" alt="">
+    <section class="reviews">
+        <div class="reviews__left">
+            <div class="reviews__left__header">
+                <div class="reviews__left__header__image">
+                    <img src="images/3.svg" alt="">
+                </div>
+                <div class="reviews__left__uptitle">что о нас говорят</div>
+                <h2 class="reviews__left__title">отзывы <span><img src="images/11.gif" alt=""></span></h2>
+            </div>
+            <p>Среди наших клиентов можно встретить крупные рестораны, сети магазинов, кафе, сервисные центры и иные компании. Многие из них на постоянной основе сотрудничают с нами, заказывая брошюры, листовки, буклеты и иную рекламную и фирменную продукцию</p>
+        </div>
+        <div class="reviews__right">
+            <div class="review">
+                <div class="review__icon">
+                    <img src="images/quotes-min.png" alt="">
+                </div>
+                <p class="review__text">Ребята молодцы, делают свою работу на высоком уровне. Буду рекомендовать всем друзьям и близким</p>
+                <div class="review__user">
+                    <img src="images/avatar01-370-min.jpg" class="review__user-image" alt="">
+                    <p class="review__user-name">Петр Яшин</p>
+                </div>
+            </div>
+            <div class="review">
+                <div class="review__icon">
+                    <img src="images/quotes-min.png" alt="">
+                </div>
+                <p class="review__text">Ребята молодцы, делают свою работу на высоком уровне. Буду рекомендовать всем друзьям и близким</p>
+                <div class="review__user">
+                    <img src="images/avatar02-370-min.jpg" class="review__user-image" alt="">
+                    <p class="review__user-name">Елена Бондарь</p>
+                </div>
+            </div>
+            <div class="review">
+                <div class="review__icon">
+                    <img src="images/quotes-min.png" alt="">
+                </div>
+                <p class="review__text">Ребята молодцы, делают свою работу на высоком уровне. Буду рекомендовать всем друзьям и близким</p>
+                <div class="review__user">
+                    <img src="images/avatar03-370-min.jpg" class="review__user-image" alt="">
+                    <p class="review__user-name">Тимур Дубаев</p>
+                </div>
+            </div>
+            <div class="review">
+                <div class="review__icon">
+                    <img src="images/quotes-min.png" alt="">
+                </div>
+                <p class="review__text">Ребята молодцы, делают свою работу на высоком уровне. Буду рекомендовать всем друзьям и близким</p>
+                <div class="review__user">
+                    <img src="images/avatar04-370-min.jpg" class="review__user-image" alt="">
+                    <p class="review__user-name">Юрий Лобов</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<footer class="footer" id="contacts">
+    <div class="footer__left">
+        <h3 class="footer__left__title">
+            Хотите <span>бесплатно</span> проконсултироваться?
+        </h3>
+        <p class="footer__left__text">Приветствуем Вас на сайте нашего салона оперативной полиграфии. Мы занимаемся печатью и изготовлением различной полиграфической продукции, в частности брошюр, буклетов, визиток, пакетов, наклеек, календарей, листовок и многого другого</p>
+        <div class="footer__left__links">
+            <span class="footer__center">
+                <a href="#popupPhone" class="footer__left_btn">online-заявка</a>
+            </span>
+            <span class="footer__left_phone">+7 (351-59) 2-12-20<br>bestprint@mail.ru</span>
+            <img src="images/3.svg" alt="">
+        </div>
+    </div>
+    <div class="footer__right">
+        <div class="footer__right__nav">
+            <h3 class="footer__nav_title">Навигация по сайту</h3>
+            <a href="" class="footer__nav_item">О нас</a>
+            <a href="" class="footer__nav_item">Услуги</a>
+            <a href="" class="footer__nav_item">Контакты</a>
+            <a href="" class="footer__nav_item">Галерея</a>
+            <a href="" class="footer__nav_item">Новости</a>
+            <a href="" class="footer__nav_item">О нас</a>
+            <a href="" class="footer__nav_item">Услуги</a>
+            <a href="" class="footer__nav_item">Контакты</a>
+            <a href="" class="footer__nav_item">Галерея</a>
+            <a href="" class="footer__nav_item">Новости</a>
+        </div>
+        <div class="footer__right_image">
+            <img src="images/2.webp" alt="">
+        </div>
+        <div class="footer__right_link">
+            <a href="#toTop">Вернуться наверх<img src="images/top.svg" alt=""></a>
+        </div>
+    </div>
+</footer>
+
+<div class="copy">
+    <a href="https:\\wd-asha.ru">&copy;wd-asha</a>
+</div>
+
+<script src="js/swiper-bundle.min.js"></script>
+<script>
+    let mobileNavPanel = document.querySelector('#mobileNavPanel');
+    let panelClose = document.querySelector('#panelClose');
+    let overlay = document.querySelector('#overlay');
+    let burger = document.querySelector('#burger');
+
+    burger.addEventListener('click', function () {
+        mobileNavPanel.classList.remove('mobile__nav__panel-hide');
+        mobileNavPanel.classList.add('mobile__nav__panel-show');
+        overlay.classList.remove('overlay-hide');
+        overlay.classList.add('overlay-show');
+    });
+
+    panelClose.addEventListener('click', function () {
+        mobileNavPanel.classList.remove('mobile__nav__panel-show');
+        mobileNavPanel.classList.add('mobile__nav__panel-hide');
+        overlay.classList.remove('overlay-show');
+        overlay.classList.add('overlay-hide');
+    });
+</script>
+<script>
+    sPerView = 4;
+    spaceBetween = 60;
+    if(window.innerWidth < 1500) {
+        spaceBetween = 50;
+    }
+    if(window.innerWidth < 1400) {
+        sPerView = 4;
+        spaceBetween = 40;
+    }
+    if(window.innerWidth < 1100) {
+        sPerView = 3;
+        spaceBetween = 60;
+    }
+    if(window.innerWidth < 1000) {
+        spaceBetween = 50;
+    }
+    if(window.innerWidth < 900){
+        spaceBetween = 40;
+    }
+    if(window.innerWidth < 800){
+        spaceBetween = 30;
+    }
+    if(window.innerWidth < 700) {
+        sPerView = 2;
+        spaceBetween = 40;
+    }
+    if(window.innerWidth < 600) {
+        spaceBetween = 30;
+    }
+    if(window.innerWidth < 500) {
+        spaceBetween = 20;
+    }
+    if(window.innerWidth < 360) {
+        sPerView = 1;
+        spaceBetween = 20;
+    }
+    let swiper = new Swiper(".mySwiper", {
+        slidesPerView: sPerView,
+        spaceBetween: spaceBetween,
+        freeMode: true,
+        grabCursor: true,
+        initialSlide: 0,
+        loop: true,
+        speed: 600,
+        autoplay: {
+            delay: 5000,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'Unbounded-Regular';
+    src: local('Unbounded-Regular'), local('Unbounded-Regular'),
+    url('../fonts/Unbounded-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Unbounded-Bold';
+    src: local('Unbounded-Bold'), local('Unbounded-Bold'),
+    url('../fonts/Unbounded-Bold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Unbounded-ExtraBold';
+    src: local('Unbounded-ExtraBold'), local('Unbounded-ExtraBold'),
+    url('../fonts/Unbounded-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Unbounded-VariableFont_wght';
+    src: local('Unbounded-VariableFont_wght'), local('Unbounded-VariableFont_wght'),
+    url('../fonts/Unbounded-VariableFont_wght.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
